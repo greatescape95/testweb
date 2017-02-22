@@ -1,7 +1,3 @@
-angular.module("myapp", [
-  "ngRoute",
-]);
-
 angular.module("myapp")
 .controller("ContactController", ["$scope", "$http", function( $scope, $http ){
 
@@ -53,34 +49,3 @@ $scope.reset = function( form ){
 
 
 }]);
-
-angular.module("myapp").config([
-  "$routeProvider", function( $routeProvider ){
-    $routeProvider.when("/contact", {
-      templateUrl: "app/contact/templates/contact.html",
-      controller: "ContactController"
-    });
-  }
-]);
-
-angular.module("myapp")
-.controller("HomeController", ["$scope", function( $scope ){
-  $scope.test = "hometest";
-  $(document).ready(function(){
-       $(".bottle_container").mouseover(function(){
-           $(".pic_container").css("background-color", "red");
-       });
-       $(".bottle_container").mouseout(function(){
-           $(".pic_container").css("background-color", "white");
-       });
-  });
-}]);
-
-angular.module("myapp").config([
-  "$routeProvider", function( $routeProvider ){
-  $routeProvider.when("/", {
-    controller: "HomeController",
-    templateUrl: "/app/home/templates/home.html"
-  });
-  $routeProvider.otherwise("/");
-  }]);

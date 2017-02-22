@@ -1,0 +1,40 @@
+<div ng-click="submitNew()">TEeeestttt</div>
+<div class="header">
+
+  <form id="form1" action="/action_page.php" novalidate>
+    Name: <input type="text" name="name"><br>
+    E-mail: <input type="text" name="email"><br><br>
+    <input type="button" onclick="submit()" value="Submit">
+  </form>
+  <form name="form" class="css-form" novalidate>
+      <label>Name:
+        <input type="text" ng-model="user.name" name="uName" required="" />
+      </label>
+      <br />
+      <div ng-show="form.$submitted || form.uName.$touched">
+        <div ng-show="form.uName.$error.required">Tell us your name.</div>
+      </div>
+
+      <label>E-mail:
+        <input type="email" ng-model="user.email" name="uEmail" required="" />
+      </label>
+      <br />
+      <div ng-show="form.$submitted || form.uEmail.$touched">
+        <span ng-show="form.uEmail.$error.required">Tell us your email.</span>
+        <span ng-show="form.uEmail.$error.email">This is not a valid email.</span>
+      </div>
+
+      <label>Message:
+        <input type="textarea" ng-model="user.message" name="uMessage" required="" />
+      </label>
+      <br />
+      <div ng-show="form.$submitted || form.uName.$touched">
+        <div ng-show="form.uMessage.$error.required">Leave us a message.</div>
+      </div>
+      <input type="button" ng-click="reset(form)" value="Reset" />
+      <input type="submit" ng-click="submit(user)" value="Save" />
+    </form>
+    <pre>user = {{user | json}}</pre>
+    <pre>master = {{master | json}}</pre>
+
+</div>
