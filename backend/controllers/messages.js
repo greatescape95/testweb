@@ -13,7 +13,6 @@ router.get('/messages', function( req, res, next ){
 });
 
 router.post('/messages', function( req, res, next ){
-  console.log( req  );
   Messages.forge({
     contact_name: req.body.user.name,
     email: req.body.user.email,
