@@ -41,7 +41,12 @@ padding:0;*/
   background-attachment: fixed;
   background-repeat: repeat-x;
   background-position: 0 0;
+  background-position-x: 0;
+  background-position-y: 0;
   background-size: 450px 2400px;
+  -webkit-background-size: 450px 2400px;
+  -moz-background-size: 450px 2400px;
+  -o-background-size: 450px 2400px;
   z-index: 1;
   left:0;
   right:0;
@@ -56,6 +61,9 @@ padding:0;*/
   padding-top: 0;
   background-image: url("../images/kosina.png");
   background-size: 100% 100%;
+  -webkit-background-size: 100% 100%;
+  -moz-background-size: 100% 100%;
+  -o-background-size: 100% 100%;
   position:absolute;
   width:100%;
   right:0;
@@ -87,7 +95,12 @@ padding:0;*/
   background-image: url("../images/boca7.png");
   background-repeat: repeat;
   background-size: 400px 250px;
-  background-position: -250px 0px;
+  -webkit-background-size: 400px 250px;
+  -moz-background-size: 400px 250px;
+  -o-background-size: 400px 250px;
+  background-position: 400px 250px;
+  background-position-x: 400px;
+  background-position-y: 250px;
   -webkit-transition-property: background-size; /* Safari */
      -webkit-transition-duration: 2s; /* Safari */
      transition-property: background-size;
@@ -119,6 +132,9 @@ padding:0;*/
   background-image: url("../images/kosina4.png");
   background-repeat: repeat;
   background-size: 100% 100%;
+  -webkit-background-size: 100% 100%;
+  -moz-background-size: 100% 100%;
+  -o-background-size: 100% 100%;
   -webkit-transition-property: background-size; /* Safari */
      -webkit-transition-duration: 2s; /* Safari */
      transition-property: background-size;
@@ -137,7 +153,12 @@ padding:0;*/
   background-image: url("../images/boca8.png");
   background-repeat: repeat;
   background-size: 400px 250px;
+  -webkit-background-size: 400px 250px;
+  -moz-background-size: 400px 250px;
+  -o-background-size: 400px 250px;
   background-position: -250px 0;
+  background-position-x: -250px;
+  background-position-y: 0;
   -webkit-transition-property: background-size; /* Safari */
      -webkit-transition-duration: 2s; /* Safari */
      transition-property: background-size;
@@ -149,6 +170,9 @@ padding:0;*/
   .fill-container{
     height: 410px;
     background-size:330px 2250px;
+    -webkit-background-size: 330px 2250px;
+    -moz-background-size: 330px 2250px;
+    -o-background-size: 330px 2250px;
   }
   .bottle-container-up, .bottle-container-down {
     height: 460px;
@@ -157,6 +181,9 @@ padding:0;*/
   .bottle-container-up::after, .bottle-container-down::after {
     height: 410px;
     background-size: 350px 200px;
+    -webkit-background-size: 350px 200px;
+    -moz-background-size: 350px 200px;
+    -o-background-size: 350px 200px;
   }
 }
 
@@ -164,6 +191,9 @@ padding:0;*/
   .fill-container{
     height: 325px;
     background-size:300px 1800px;
+    -webkit-background-size: 300px 1800px;
+    -moz-background-size: 300px 1800px;
+    -o-background-size: 300px 1800px;
   }
   .bottle-container-up, .bottle-container-down {
     height: 375px;
@@ -172,7 +202,12 @@ padding:0;*/
   .bottle-container-up::after, .bottle-container-down::after {
     height: 325px;
     background-size: 280px 160px;
+    -webkit-background-size: 280px 160px;
+    -moz-background-size: 280px 160px;
+    -o-background-size: 280px 160px;
     background-position: -200px 0;
+    background-position-x: -200px;
+    background-position-y: 0;
   }
 }
 
@@ -180,6 +215,9 @@ padding:0;*/
   .fill-container{
     height: 285px;
     background-size:260px 1500px;
+    -webkit-background-size: 260px 1500px;
+    -moz-background-size: 260px 1500px;
+    -o-background-size: 260px 1500px;
   }
   .bottle-container-up, .bottle-container-down {
     height: 335px;
@@ -187,7 +225,13 @@ padding:0;*/
   .bottle-container-up::after, .bottle-container-down::after {
     height: 285px;
     background-size: 240px 140px;
+    -webkit-background-size: 240px 140px;
+    -moz-background-size: 240px 140px;
+    -o-background-size: 240px 140px;
     background-position: -160px 0;
+    background-position-x: -160px;
+    background-position-y: 0;
+
   }
 }
 
@@ -195,6 +239,9 @@ padding:0;*/
   .fill-container{
     height: 225px;
     background-size:210px 1200px;
+    -webkit-background-size: 210px 1200px;
+    -moz-background-size: 210px 1200px;
+    -o-background-size: 210px 1200px;
     margin-top: 25px;
   }
   .bottle-container-up, .bottle-container-down {
@@ -207,7 +254,12 @@ padding:0;*/
     height: 225px;
     top:25px;
     background-size: 195px 110px;
+    -webkit-background-size: 195px 110px;
+    -moz-background-size: 195px 110px;
+    -o-background-size: 195px 110px;
     background-position: -130px 0;
+    background-position-x: -130px;
+    background-position-y: 0;
   }
   .imgborder-u {
     height:15px;
@@ -221,6 +273,9 @@ padding:0;*/
   .fill-container{
     height: 175px;
     background-size:160px 900px;
+    -webkit-background-size: 160px 900px;
+    -moz-background-size: 160px 900px;
+    -o-background-size: 160px 900px;
   }
   .bottle-container-up, .bottle-container-down {
     height: 200px;
@@ -229,7 +284,12 @@ padding:0;*/
   .bottle-container-up::after, .bottle-container-down::after {
     height: 175px;
     background-size: 150px 86px;
+    -webkit-background-size: 150px 86px;
+    -moz-background-size: 150px 86px;
+    -o-background-size: 150px 86px;
     background-position: -160px 0;
+    background-position-x: -160px;
+    background-position-y: 0;
   }
 }
 
@@ -237,12 +297,18 @@ padding:0;*/
   height:30px;
   background-image: url("../images/kosina2.png");
   background-size: 100% 100%;
+  -webkit-background-size: 100% 100%;
+  -moz-background-size: 100% 100%;
+  -o-background-size: 100% 100%;
   width:100%;
 }
 .imgborder-d {
   height:30px;
   background-image: url("../images/kosina3.png");
   background-size: 100% 100%;
+  -webkit-background-size: 100% 100%;
+  -moz-background-size: 100% 100%;
+  -o-background-size: 100% 100%;
   width:100%;
 }
 
