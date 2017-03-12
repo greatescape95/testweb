@@ -1,18 +1,5 @@
-body:before {
-  content: "";
-  display: block;
-  position: fixed;
-  left: 0;
-  top: 0;
-  width: 100%;
-  height: 100%;
-  z-index: -10;
-  background: url("../images/header.jpg") no-repeat center center;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
-  font-family: 'Yanone Kaffeesatz', sans-serif;
+body::before {
+
 }
 
 
@@ -27,9 +14,27 @@ scroll-behavior: smooth;
   height:80vh;
 }
 
-.container{
-/*margin:0;
-padding:0;*/
+.container-wrap {
+  overflow: hidden;
+}
+
+.container-wrap::before{
+margin:0;
+padding:0;
+content: "";
+display: block;
+position: fixed;
+left: 0;
+top: 0;
+width: 100%;
+height: 100%;
+z-index: -10;
+background: url("../images/header.jpg") no-repeat center center;
+-webkit-background-size: cover;
+-moz-background-size: cover;
+-o-background-size: cover;
+background-size: cover;
+font-family: 'Yanone Kaffeesatz', sans-serif;
 }
 .fill-container {
   margin-top: 50px;
