@@ -40,16 +40,11 @@ font-family: 'Yanone Kaffeesatz', sans-serif;
   margin-top: 50px;
   padding: 0;
   width: 100%;
-  background-image: url("../images/ispuna.jpg");
   height: 510px;
   position: absolute;
-  background-attachment: inherit;
-  background-repeat: repeat-x;
-  background-position: 0 0;
-  background-position-x: 0;
-  background-position-y: 0;
-  background-size: 450px 2400px;
-  -webkit-background-size: 450px 2400px;
+  background: url("../images/ispuna.jpg") repeat-x top center fixed;
+  background-size: 450px 1200px;
+  -webkit-background-size: 450px 2200px;
   -moz-background-size: 450px 2400px;
   -o-background-size: 450px 2400px;
   z-index: 1;
@@ -60,6 +55,7 @@ font-family: 'Yanone Kaffeesatz', sans-serif;
      transition-property: background-image;
      transition-duration: 2s;
 }
+
 
 .bottle-container-up::before {
   height:51px;
