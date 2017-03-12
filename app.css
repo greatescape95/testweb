@@ -3,11 +3,9 @@ body{
   background-image: url("../images/header.jpg");
   background-attachment: fixed;
   background-repeat: no-repeat;
-  background-size: cover;
+  background-size: 100% !important;
   background-position: top;
   width:100%;
-  right:0;
-  left:0;
   font-family: 'Yanone Kaffeesatz', sans-serif;
 }
 .header {
