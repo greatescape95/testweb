@@ -53,7 +53,7 @@ var serveStatic = require('serve-static');
       },
       templates: {
         files: ["app/**/*.html"],
-        tasks: ["html2js","concat:generated"]
+        tasks: ["concat:generated"]
       },
       js: {
         files: [ "app/*.js", "app/**/*.js" ],

@@ -1,111 +1,341 @@
-.pic_container {
-  margin: auto;
-  width: 100%;
-  /* The image used */
-  background-image: url("../images/ispuna.png");
 
-  /* Set a specific height */
-  height: 500px;
-  position: absolute;
-  /* Create the parallax scrolling effect */
+body{
+  background-image: url("../images/header.jpg");
   background-attachment: fixed;
-  background-repeat: repeat-x;;
-  background-position: 0 300px;
-  background-size: 70px 800px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: top;
+  width:100%;
+  right:0;
+  left:0;
+  font-family: 'Yanone Kaffeesatz', sans-serif;
+}
+.header {
+  width:100%;
+  height:80vh;
+
+}
+
+.fill-container {
+  margin-top: 50px;
+  padding: 0;
+  width: 100%;
+  background-image: url("../images/ispuna.jpg");
+  height: 510px;
+  position: absolute;
+  background-attachment: fixed;
+  background-repeat: repeat-x;
+  background-position: 0 0;
+  background-size: 450px 2400px;
   z-index: 1;
-  border: 1px solid green;
   left:0;
   right:0;
   -webkit-transition-property: background-image; /* Safari */
      -webkit-transition-duration: 2s; /* Safari */
      transition-property: background-image;
      transition-duration: 2s;
-
 }
 
-.pic_container:hover {
-  background-image: url("../images/boca6.png");
+.bottle-container-up::before {
+  height:51px;
+  padding-top: 0;
+  background-image: url("../images/kosina.png");
+  background-size: 100% 100%;
+  position:absolute;
+  width:100%;
+  right:0;
+  top:0;
+  left:0;
+  z-index:1;
+  filter: drop-shadow(rgba(29, 38, 37, .5) 0 0 10px 0 20px);
+  content: "";
 }
 
-.pic_container:hover {
-  background-position: 0 200px;
-}
-
-.bottle_container {
-  padding: 0;
-  margin: auto;
-  height: 515px;
+.bottle-container-up {
+  height: 560px;
   width: 100%;
-  z-index: 2;
+  z-index: 1;
   position: relative;
-  border: 1px solid blue;
+  display:block;
+  top:0;
+  left:0;
+}
+
+.bottle-container-up::after {
+  width: 100%;
+  z-index: 1;
+  height:510px;
+  position: absolute;
+  top:50px;
+  left:0;
+  right:0;
   background-image: url("../images/boca7.png");
   background-repeat: repeat;
   background-size: 400px 250px;
-
+  background-position: -250px 0px;
+  -webkit-transition-property: background-size; /* Safari */
+     -webkit-transition-duration: 2s; /* Safari */
+     transition-property: background-size;
+     transition-duration: 2s;
+  content: "";
 }
 
+.bottle-container-down {
+  padding: 0;
+  margin: auto;
+  height: 560px;
+  width: 100%;
+  z-index: 2;
+  position: relative;
+  top:0;
+  left:0;
+  right:0
+}
+
+.bottle-container-down::before {
+  content: "";
+  height:50px;
+  width: 100%;
+  z-index: 2;
+  position: absolute;
+  top:0;
+  left:0;
+  right:0;
+  background-image: url("../images/kosina4.png");
+  background-repeat: repeat;
+  background-size: 100% 100%;
+  -webkit-transition-property: background-size; /* Safari */
+     -webkit-transition-duration: 2s; /* Safari */
+     transition-property: background-size;
+     transition-duration: 2s;
+}
+
+.bottle-container-down::after {
+  content: "";
+  height: 510px;
+  width: 100%;
+  z-index: 2;
+  position: absolute;
+  top:50px;
+  left:0;
+  right:0;
+  background-image: url("../images/boca8.png");
+  background-repeat: repeat;
+  background-size: 400px 250px;
+  background-position: -250px 0;
+  -webkit-transition-property: background-size; /* Safari */
+     -webkit-transition-duration: 2s; /* Safari */
+     transition-property: background-size;
+     transition-duration: 2s;
+}
+
+
+@media(max-width:1600px){
+  .fill-container{
+    height: 410px;
+    background-size:330px 2250px;
+  }
+  .bottle-container-up, .bottle-container-down {
+    height: 460px;
+
+  }
+  .bottle-container-up::after, .bottle-container-down::after {
+    height: 410px;
+    background-size: 350px 200px;
+  }
+}
+
+@media(max-width:1200px){
+  .fill-container{
+    height: 325px;
+    background-size:300px 1800px;
+  }
+  .bottle-container-up, .bottle-container-down {
+    height: 375px;
+
+  }
+  .bottle-container-up::after, .bottle-container-down::after {
+    height: 325px;
+    background-size: 280px 160px;
+    background-position: -200px 0;
+  }
+}
+
+@media(max-width:1000px){
+  .fill-container{
+    height: 285px;
+    background-size:260px 1500px;
+  }
+  .bottle-container-up, .bottle-container-down {
+    height: 335px;
+  }
+  .bottle-container-up::after, .bottle-container-down::after {
+    height: 285px;
+    background-size: 240px 140px;
+    background-position: -160px 0;
+  }
+}
+
+@media(max-width:768px){
+  .fill-container{
+    height: 225px;
+    background-size:210px 1200px;
+    margin-top: 25px;
+  }
+  .bottle-container-up, .bottle-container-down {
+    height: 250px;
+  }
+  .bottle-container-up::before, .bottle-container-down::before {
+    height: 26px;
+  }
+  .bottle-container-up::after, .bottle-container-down::after {
+    height: 225px;
+    top:25px;
+    background-size: 195px 110px;
+    background-position: -130px 0;
+  }
+  .imgborder-u {
+    height:15px;
+  }
+  .imgborder-d {
+    height:15px;
+  }
+}
+
+@media(max-width:480px){
+  .fill-container{
+    height: 175px;
+    background-size:160px 900px;
+  }
+  .bottle-container-up, .bottle-container-down {
+    height: 200px;
+
+  }
+  .bottle-container-up::after, .bottle-container-down::after {
+    height: 175px;
+    background-size: 150px 86px;
+    background-position: -160px 0;
+  }
+}
+
+.imgborder-u {
+  height:30px;
+  background-image: url("../images/kosina2.png");
+  background-size: 100% 100%;
+  width:100%;
+}
+.imgborder-d {
+  height:30px;
+  background-image: url("../images/kosina3.png");
+  background-size: 100% 100%;
+  width:100%;
+}
 
 .wrapper {
   position:fixed;
   width:100%;
   height:100%;
 }
+.content-name{
+  width:100%;
+  z-index: 2;
+line-height:400px;
+  text-align: center;
+}
+
+.content-name h1{
+  vertical-align: middle;
+   display: inline-block;
+   width: 100%;
+   color: white;
+   font-size: 54px;
+   font-family: 'Yanone Kaffeesatz', sans-serif;
+}
+
 .content{
   width:100%;
-  height:300px;
-  background-image: url("../images/header.jpg");
-  background-attachment: fixed;
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: 0 -200px;
   z-index: 2;
-  -webkit-filter: sepia(1);
-filter: sepia(1);
--webkit-filter: brightness(0.5);
-filter: brightness(0.5);
--webkit-filter: grayscale(0.7);
-  filter: grayscale(0.7);
+
 }
 
-.footer {
+.content-home-container {
+  color: white;
+  font-family: 'Yanone Kaffeesatz', sans-serif;
+  border: 1px solid #d3d3d3;
+  background-color: #fff;
+  border: 1px solid #d3d3d3;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+}
+
+.content-home-header-container {
+  background-color: #FFC3E1;
+  box-shadow: 0px 3px 5px 0px rgba(0,0,0,0.25);
+  font-size: 14px;
+  font-family: 'Yanone Kaffeesatz', sans-serif;
+  padding: 1px 1px 1px 10px;
+}
+.content-home-body {
+  background-color: #fff;
+  font-size: 15px;
+  font-family: 'Yanone Kaffeesatz', sans-serif;
+  color: #000;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+}
+
+.content-home-body p {
+  line-height: 1.6;
+}
+
+.content-home-body img {
   width:100%;
-  height:300px;
-  background-image: url("../images/header.jpg");
-  background-attachment: fixed;
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: 0 -200px;
-  z-index: 1;
-  position:absolute;
-  -webkit-filter: sepia(1);
-filter: sepia(1);
--webkit-filter: brightness(0.5);
-filter: brightness(0.5);
--webkit-filter: grayscale(0.5);
-  filter: grayscale(0.5);
-
+  height: auto;
 }
+
+
+
+.content-icon {
+  margin-right: 20px;
+  width:20px;
+  height:auto;
+}
+
+.detail{
+  border: 1px dotted white;
+  height: 400px;
+}
+.footer {
+  background-image: url("../images/ispuna.png");
+  background-repeat: repeat-x;
+  background-size: 400px 1200px;
+  background-position: 0 0;
+  color: #fff;
+  padding-top: 310px;
+  right:0;
+  left:0;
+  z-index:4
+}
+
+
+
 
 html {
   scroll-behavior: smooth;
 }
 
+i {
+  display:inline-block;
+  float: left;
+}
+
 .img {
   width: 100%;
   height: auto;
-  margin: auto;
+
 }
 
-.header {
-  height:700px;
-  background-image: url("../images/header.jpg");
-  background-attachment: fixed;
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: 0 -200px;
-  z-index: 0;
-}
+
 
 ul {
   list-style-type: none;
@@ -145,4 +375,9 @@ li a:hover:not(.active) {
 
 .active {
   background-color: #4CAF50;
+}
+
+#map {
+  width:100%;
+  height: 350px;
 }
