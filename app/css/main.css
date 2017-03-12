@@ -5,8 +5,8 @@ body{
   background-repeat: no-repeat;
   background-size: cover;
   -webkit-background-size: cover; /* safari may need this */
-  background-position: top;
-  width:100%;
+  background-position: top center;
+
   font-family: 'Yanone Kaffeesatz', sans-serif;
 }
 
