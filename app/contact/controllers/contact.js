@@ -1,6 +1,6 @@
 angular.module("myapp")
 .controller("ContactController", ["$scope", "$http", function( $scope, $http ){
-
+document.getElementById('contact').focus();
   $scope.submit = function( user ){
    console.log("prije requesta");
     $http({

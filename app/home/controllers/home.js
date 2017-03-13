@@ -1,5 +1,8 @@
 angular.module("myapp")
 .controller("HomeController", ["$scope", "$timeout", function( $scope, $timeout ){
+//focus first link
+document.getElementById('home').focus();
+
   var position;
   var debouncer;
   position = $(".fill-container").css("backgroundPositionX");

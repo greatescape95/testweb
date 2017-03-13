@@ -29,7 +29,7 @@
   <link href="https://fonts.googleapis.com/css?family=Yanone+Kaffeesatz" rel="stylesheet">
   <!-- map -->
 
-  <script 
+  <script
   src="https://maps.googleapis.com/maps/api/js?key=AIzaSyB26jNjRvURBlAu9OZfXpBQx_PioYZZwxg">
 </script>
 
@@ -40,14 +40,19 @@
 </head>
 
 <body ng-app="myapp">
-
+<div class="row main-menu">
   <ul>
-    <li><a class="active" href="#home">Home</a></li>
-    <li><a href="#news">About</a></li>
-    <li><a href="/#!/contact">Wines</a></li>
-    <li><a href="#about">Contact</a></li>
+    <li><a id="home" href="/#!/home">Home</a></li>
+    <li><a href="/#!/about">About</a></li>
+    <li><a href="/#!/wines">Wines</a></li>
+    <li><a id="contact" href="/#!/contact">Contact</a></li>
   </ul>
+</div>
+
 <ng-view></ng-view>
+<script>
+
+</script>
 
 
 </body>
