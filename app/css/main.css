@@ -15,12 +15,13 @@ html {
   right: 0;
   top:0;
   overflow: hidden;
-  height:100px;
+  height: 100px;
   width: 100%;
   background-color: #990000;
 }
 
 .main-menu{
+  margin:0;
   position: fixed;
   left: 0;
   right: 0;
