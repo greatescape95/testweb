@@ -1,10 +1,10 @@
-body::before {
 
+body {
+    overflow-y: scroll;
+    -webkit-overflow-scrolling:touch;
 }
 
-
 html {
-height: 100vh; /* set viewport constraint */
 min-height: 100%; /* enforce height */
 scroll-behavior: smooth;
 }
