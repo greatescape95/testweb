@@ -16,24 +16,25 @@ html {
   top:0;
   overflow: hidden;
   height: 100px;
-  width: 100%;
+  width: 100vh;
   background-color: #990000;
 }
 
 .main-menu{
   margin:0;
+  padding:0;
   position: fixed;
   left: 0;
   right: 0;
   top:0;
   overflow: hidden;
   height:200px;
-  width: 100%;
+  width: 100vh;
   z-index:5;
 }
 
 .main-menu::after{
-  width: 100%;
+  width: 100vh;
   height:50px;
   position: fixed;
   top:100px;
