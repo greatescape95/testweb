@@ -16,7 +16,8 @@ html {
   top:0;
   overflow: hidden;
   height: 100px;
-  width: 100vh;
+  width: 100%;
+  width: 100vw;
   background-color: #990000;
 }
 
@@ -29,18 +30,20 @@ html {
   top:0;
   overflow: hidden;
   height:200px;
-  width: 100vh;
+  width: 100%;
+  width: 100vw;
   z-index:5;
 }
 
 .main-menu::after{
-  width: 100vh;
+  width: 100%;
+  width: 100vw;
   height:50px;
   position: fixed;
   top:100px;
   left:0;
   right:0;
-  background-image: url("../images/kosina2.png");
+  background-image: url("../images/kosina5.png");
   background-repeat: repeat;
   background-size: 100% 100%;
   -webkit-background-size: 100% 100%;

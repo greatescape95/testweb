@@ -17,11 +17,13 @@ html {
   overflow: hidden;
   height: 100px;
   width: 100%;
+  width: 100vw;
   background-color: #990000;
 }
 
 .main-menu{
   margin:0;
+  padding:0;
   position: fixed;
   left: 0;
   right: 0;
@@ -29,17 +31,19 @@ html {
   overflow: hidden;
   height:200px;
   width: 100%;
+  width: 100vw;
   z-index:5;
 }
 
 .main-menu::after{
   width: 100%;
+  width: 100vw;
   height:50px;
   position: fixed;
   top:100px;
   left:0;
   right:0;
-  background-image: url("../images/kosina2.png");
+  background-image: url("../images/kosina5.png");
   background-repeat: repeat;
   background-size: 100% 100%;
   -webkit-background-size: 100% 100%;
