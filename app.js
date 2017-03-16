@@ -2,6 +2,15 @@ angular.module("myapp", [
   "ngRoute",
 ]);
 
+$(document).ready(function(){
+  $('.menu-small-icon').click(function(){
+    $(".menu-small-dropdown").slideDown(300);
+  });
+  $(".menu-small-dropdown li").click(function(){
+    $( ".menu-small-dropdown" ).hide();
+  });
+});
+
 angular.module("myapp")
 .controller("ContactController", ["$scope", "$http", function( $scope, $http ){
 document.getElementById('contact').focus();
