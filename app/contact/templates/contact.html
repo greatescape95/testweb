@@ -22,7 +22,7 @@
         <div class="col-sm-12 col-md-10 col-lg-8 bg-white">
           <form name="form" class="p_xl">
             <div class="form-group">
-              <label for="formGroupExampleInput">Name</label>
+              <label class="label-contact" for="formGroupExampleInput">Name:</label>
               <input type="text" class="form-control" id="formGroupExampleInput" placeholder="Please enter your name" ng-model="user.name" name="uName" required="">
               <br />
               <div ng-show="form.$submitted || form.uName.$touched">
@@ -30,7 +30,7 @@
               </div>
             </div>
             <div class="form-group">
-              <label for="formGroupExampleInput2">E-mail:</label>
+              <label class="label-contact" for="formGroupExampleInput2">E-mail:</label>
               <input type="text" class="form-control" id="formGroupExampleInput2" placeholder="Please enter your e-mail" ng-model="user.email" name="uEmail" required="">
               <br />
               <div ng-show="form.$submitted || form.uEmail.$touched">
@@ -39,14 +39,16 @@
               </div>
             </div>
             <div class="form-group">
-              <label for="formGroupExampleInput2">Message:</label>
-              <input type="textarea" class="form-control" id="formGroupExampleInput3" placeholder="Please enter your message"  ng-model="user.message" name="uMessage" required="">
+              <label class="label-contact" for="formGroupExampleInput2">Message:</label>
+              <textarea class="form-control" rows="8" id="formGroupExampleInput3" placeholder="Please enter your message"  ng-model="user.message" name="uMessage" required="">
+              </textarea>
               <br />
               <div ng-show="form.$submitted || form.uName.$touched">
                 <div ng-show="form.uMessage.$error.required">Leave us a message.</div>
               </div>
             </div>
-            <button type="submit" class="btn btn-primary" ng-click="submitNew()">Get in touch</button>
+            <button type="submit" class="btn btn-primary btn-contact" ng-click="submit(user)">Get in touch</button>
+            <button type="submit" class="btn btn-primary btn-contact" ng-click="reset(form)">Reset form</button>
           </form>
           <!--<pre>user = {{user | json}}</pre>
           <pre>master = {{master | json}}</pre>-->
