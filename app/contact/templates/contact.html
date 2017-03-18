@@ -1,40 +1,121 @@
-<div ng-click="submitNew()">TEeeestttt323223</div>
-<div class="header">
+<div class="container-wrap">
 
-  <form id="form1" action="/action_page.php" novalidate>
-    Name: <input type="text" name="name"><br>
-    E-mail: <input type="text" name="email"><br><br>
-    <input type="button" onclick="submit()" value="Submit">
-  </form>
-  <form name="form" class="css-form" novalidate>
-      <label>Name:
-        <input type="text" ng-model="user.name" name="uName" required="" />
-      </label>
-      <br />
-      <div ng-show="form.$submitted || form.uName.$touched">
-        <div ng-show="form.uName.$error.required">Tell us your name.</div>
+  <!-- header -->
+  <div class="row">
+    <div class="header-contact">
+    </div>
+
+
+
+    <!-- heading -->
+    <div class="row">
+      <div class="content-name">
+        <h1 class="m_0">Contact us freely</h1>
+      </div>
+    </div>
+
+    <!-- data form -->
+    <div class="row mb_xl">
+      <div class="col-sm-12 pb_s">
+        <div class="hidden-sm col-md-1 col-lg-2 p_s">
+        </div>
+        <div class="col-sm-12 col-md-10 col-lg-8 bg-white">
+          <form name="form" class="p_xl">
+            <div class="form-group">
+              <label for="formGroupExampleInput">Name</label>
+              <input type="text" class="form-control" id="formGroupExampleInput" placeholder="Please enter your name" ng-model="user.name" name="uName" required="">
+              <br />
+              <div ng-show="form.$submitted || form.uName.$touched">
+                <div ng-show="form.uName.$error.required">Tell us your name.</div>
+              </div>
+            </div>
+            <div class="form-group">
+              <label for="formGroupExampleInput2">E-mail:</label>
+              <input type="text" class="form-control" id="formGroupExampleInput2" placeholder="Please enter your e-mail" ng-model="user.email" name="uEmail" required="">
+              <br />
+              <div ng-show="form.$submitted || form.uEmail.$touched">
+                <span ng-show="form.uEmail.$error.required">Tell us your email.</span>
+                <span ng-show="form.uEmail.$error.email">This is not a valid email.</span>
+              </div>
+            </div>
+            <div class="form-group">
+              <label for="formGroupExampleInput2">Message:</label>
+              <input type="textarea" class="form-control" id="formGroupExampleInput3" placeholder="Please enter your message"  ng-model="user.message" name="uMessage" required="">
+              <br />
+              <div ng-show="form.$submitted || form.uName.$touched">
+                <div ng-show="form.uMessage.$error.required">Leave us a message.</div>
+              </div>
+            </div>
+            <button type="submit" class="btn btn-primary" ng-click="submitNew()">Get in touch</button>
+          </form>
+          <!--<pre>user = {{user | json}}</pre>
+          <pre>master = {{master | json}}</pre>-->
+        </div>
+        <div class="hidden-sm col-md-1 col-lg-2 p_s">
+        </div>
+      </div>
+    </div>
+
+    <!--footer -->
+    <div class="footer-container">
+      <div class="row pb_m">
+        <div class="col-sm-12">
+          <div class="hidden-sm col-md-1 col-lg-2">
+          </div>
+          <div class="col-sm-12 col-md-5 col-lg-4 pt_l">
+            <h1 class="m_0">Wine Tasting Brac</h1>
+            <h3 class="m_xs">OPG Franulić</h3>
+            <h3 class="m_xs">Zrtava fašizma 11 | 21423 Nerežišća</h3>
+            <h3 class="m_xs">Island of Brač | Croatia</h3>
+          </div>
+          <div class="col-sm-12 col-md-5 col-lg-4 pt_l">
+            <h1 class="m_0">Get in touch</h1>
+            <div class="mb_s mt_s">
+              <i class="fa fa-envelope fa-2x mr_s" aria-hidden="true"></i>
+              <h2 class="m_0">winetastingbrac@gmail.com</h2>
+            </div>
+            <div class="mb_s">
+              <i class="fa fa-phone-square fa-2x cll mr_s" aria-hidden="true"></i>
+              <h2 class="m_0">+385 98 195 1550</h2>
+            </div>
+          </div>
+          <div class="hidden-sm col-md-1 col-lg-2">
+          </div>
+        </div>
       </div>
 
-      <label>E-mail:
-        <input type="email" ng-model="user.email" name="uEmail" required="" />
-      </label>
-      <br />
-      <div ng-show="form.$submitted || form.uEmail.$touched">
-        <span ng-show="form.uEmail.$error.required">Tell us your email.</span>
-        <span ng-show="form.uEmail.$error.email">This is not a valid email.</span>
+      <div class="row">
+        <div class="col-sm-12">
+          <div class="hidden-sm col-md-1 col-lg-2">
+          </div>
+          <div class="col-sm-12 col-md-10 col-lg-8">
+            <div id="map"></div>
+          </div>
+          <div class="hidden-sm col-md-1 col-lg-2">
+          </div>
+        </div>
       </div>
 
-      <label>Message:
-        <input type="textarea" ng-model="user.message" name="uMessage" required="" />
-      </label>
-      <br />
-      <div ng-show="form.$submitted || form.uName.$touched">
-        <div ng-show="form.uMessage.$error.required">Leave us a message.</div>
+      <div class="row">
+        <div class="col-sm-12">
+          <div class="hidden-sm col-md-1 col-lg-2">
+          </div>
+          <div class="col-sm-12 col-md-10 col-lg-8 tac">
+            <div class="m_m inb">
+              <i class="fa fa-facebook-official fa-2x mr_l" aria-hidden="true"></i>
+              <i class="fa fa-instagram fa-2x mr_l" aria-hidden="true"></i>
+              <i class="fa fa-google-plus fa-2x mr_l" aria-hidden="true"></i>
+              <i class="fa fa-tripadvisor fa-2x mr_l" aria-hidden="true"></i>
+            </div>
+          </div>
+          <div class="hidden-sm col-md-1 col-lg-2">
+          </div>
+        </div>
       </div>
-      <input type="button" ng-click="reset(form)" value="Reset" />
-      <input type="submit" ng-click="submit(user)" value="Save" />
-    </form>
-    <pre>user = {{user | json}}</pre>
-    <pre>master = {{master | json}}</pre>
 
-</div>
+    </div>
+
+  </div>
+
+
+  <div ng-click="submitNew()">TEeeestttt323223</div>

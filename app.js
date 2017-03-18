@@ -2,6 +2,7 @@ angular.module("myapp", [
   "ngRoute",
 ]);
 
+
 $(document).ready(function(){
   $('.menu-small-icon').click(function(){
     $(".menu-small-dropdown").slideDown(300);
@@ -60,6 +61,21 @@ $scope.reset = function( form ){
      }
 };
 
+var mapInit = function initMap() {
+        var uluru = {lat: -25.363, lng: 131.044};
+        var map = new google.maps.Map(document.getElementById('map'), {
+          zoom: 15,
+          center: new google.maps.LatLng(43.32922, 16.573711000000003)
+        });
+        var marker = new google.maps.Marker({
+          position: new google.maps.LatLng(43.32922, 16.573711000000003),
+          map: map
+        });
+        google.maps.event.addDomListener(window, 'resize', function() {
+  map.setCenter(map.getCenter());
+});
+      }();
+
 
 }]);
 
@@ -74,8 +90,8 @@ angular.module("myapp").config([
 
 angular.module("myapp")
 .controller("HomeController", ["$scope", "$timeout", function( $scope, $timeout ){
-//focus first link
-document.getElementById('home').focus();
+  //focus first link
+  document.getElementById('home').focus();
 
   var position;
   var debouncer;
@@ -115,13 +131,8 @@ document.getElementById('home').focus();
           });
           google.maps.event.addDomListener(window, 'resize', function() {
     map.setCenter(map.getCenter());
-});
+  });
         }();
-
-
-console.log(document.getElementById( 'map' ));
-
-
 
 }]);
 

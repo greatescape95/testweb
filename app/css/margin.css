@@ -177,6 +177,14 @@ margin helpers
   padding-top: 15px;
 }
 
+.p_l {
+  padding: 20px;
+}
+
+.p_xl {
+  padding: 25px;
+}
+
 .pt_l {
   padding-top: 20px;
 }

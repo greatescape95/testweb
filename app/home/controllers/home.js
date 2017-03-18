@@ -1,7 +1,7 @@
 angular.module("myapp")
 .controller("HomeController", ["$scope", "$timeout", function( $scope, $timeout ){
-//focus first link
-document.getElementById('home').focus();
+  //focus first link
+  document.getElementById('home').focus();
 
   var position;
   var debouncer;
@@ -41,12 +41,7 @@ document.getElementById('home').focus();
           });
           google.maps.event.addDomListener(window, 'resize', function() {
     map.setCenter(map.getCenter());
-});
+  });
         }();
-
-
-console.log(document.getElementById( 'map' ));
-
-
 
 }]);
