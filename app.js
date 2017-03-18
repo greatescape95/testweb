@@ -2,7 +2,6 @@ angular.module("myapp", [
   "ngRoute",
 ]);
 
-
 $(document).ready(function(){
   $('.menu-small-icon').click(function(){
     $(".menu-small-dropdown").slideDown(300);
