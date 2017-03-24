@@ -6,7 +6,7 @@ var Messages = bookshelf.model("Messages");
 var message;
 var sendmail = require('sendmail')();
 var nodemailer = require("nodemailer");
-
+/*
 var smtpTransport = nodemailer.createTransport("SMTP", {
   service: "Gmail",
   auth: {
@@ -17,7 +17,7 @@ var smtpTransport = nodemailer.createTransport("SMTP", {
       refreshToken: "1/meLIb67CCZRihCLbRPxmu5XcEaP-MWySxbvbp0WvfGY"
     }
   }
-});
+});*/
 
 router.get('/messages', function( req, res, next ){
   Messages.query().where("email", "=", "f").then( function( messages ) {
@@ -38,7 +38,7 @@ router.post('/messages', function( req, res, next ){
     if ( message ){
       console.log("test", req.body.user.hidden);
       console.log(message.attributes.contact_name);
-    }
+    }/*
     if( !req.body.user.hidden ) {
       var template = "<p>Name:</p><br>"+
                       message.attributes.contact_name +
@@ -66,7 +66,7 @@ router.post('/messages', function( req, res, next ){
       });
     }
 
-
+*/
     console.log("saved");
     res.json( data );
   }).catch( function(err){
