@@ -27,7 +27,7 @@ document.getElementById('contact').focus();
     }).catch( function( err ){
       console.log( err );
     });
-/*
+
     $http.post('/api/messages', {user:user});
   $.post("/api/messages",
         {
@@ -35,7 +35,7 @@ document.getElementById('contact').focus();
         },
         function(data,status){
             alert("Data: " + data + "\nStatus: " + status);
-        }); */
+        }); 
   };
 
 
