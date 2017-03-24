@@ -14,6 +14,7 @@
       </div>
     </div>
 
+
     <!-- data form -->
     <div class="row mb_xl m_m">
       <div class="col-sm-12 pb_s">
@@ -47,11 +48,11 @@
                 <div ng-show="form.uMessage.$error.required">Leave us a message.</div>
               </div>
             </div>
+            <input type="text" name="foo" style="display: none;" ng-model="user.hidden">
             <button type="submit" class="btn btn-primary btn-contact" ng-click="submit(user)">Get in touch</button>
             <button type="submit" class="btn btn-primary btn-contact" ng-click="reset(form)">Reset form</button>
+
           </form>
-          <!--<pre>user = {{user | json}}</pre>
-          <pre>master = {{master | json}}</pre>-->
         </div>
         <div class="hidden-sm col-md-1 col-lg-2 p_s">
         </div>
@@ -118,6 +119,3 @@
     </div>
 
   </div>
-
-
-  <div ng-click="submitNew()">TEeeestttt323223</div>

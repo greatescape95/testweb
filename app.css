@@ -17,6 +17,15 @@
   border: 1px solid grey;
 }
 
+
+
+.btn-primary:hover {
+  background-position :0;
+  background-image: linear-gradient(to bottom, #d3d3d3 0%, #770000 100%);
+}
+
+
+
 .label-contact {
   font-size: 36px;
 }
