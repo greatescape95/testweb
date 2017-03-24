@@ -68,7 +68,7 @@ router.post('/messages', function( req, res, next ){
 
 
     console.log("saved");
-    console.log( data );
+    res.json( data );
   }).catch( function(err){
     console.log(err);
   });
