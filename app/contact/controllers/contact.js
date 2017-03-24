@@ -15,14 +15,14 @@ document.getElementById('contact').focus();
       console.log( err );
     });
 
-    $http.post('/api/messages', {user:user});
+  /*  $http.post('/api/messages', {user:user});
   $.post("/api/messages",
         {
           user: user,
         },
         function(data,status){
             alert("Data: " + data + "\nStatus: " + status);
-        }); 
+        });   */
   };
 
 
