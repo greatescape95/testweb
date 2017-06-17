@@ -22,8 +22,8 @@ app.post("/api", function( req, res ){
 
 app.use("/api", messages);
 
-server.listen(3001, function(){
-  console.log("Listening to port 3001");
+server.listen(3002, function(){
+  console.log("Listening to port 3002");
 });
 
 /*

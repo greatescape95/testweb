@@ -17,9 +17,17 @@
   border: 1px solid grey;
 }
 
+.feedback-form {
+  height: 300px;
+  text-align: center;
+  line-height: 300px;
+}
 
+#feedback-form {
+  display:none;
+}
 
-.btn-primary:hover {
+.btn-primary:hover, .btn-primary:focus {
   background-position :0;
   background-image: linear-gradient(to bottom, #d3d3d3 0%, #770000 100%);
 }
@@ -594,6 +602,15 @@ ul.menu-big li a:hover, ul.menu-big li a:active, ul.menu-big li a:focus {
   font-family: 'Yanone Kaffeesatz', sans-serif;
 }
 
+.feedback-form h1{
+  vertical-align: middle;
+  display: inline-block;
+  width: 100%;
+  color: black;
+  font-size: 34px;
+  font-family: 'Yanone Kaffeesatz', sans-serif;
+}
+
 .content{
   width:100%;
   z-index: 2;
@@ -651,17 +668,13 @@ ul.menu-big li a:hover, ul.menu-big li a:active, ul.menu-big li a:focus {
   background-image: url("../images/ispuna.png");
   background-repeat: repeat-x;
   background-size: 400px 1200px;
-  background-position: 0 0;
+  background-position: 0 -100px;
   color: #fff;
-  padding-top: 310px;
+  padding-top: 200px;
   right:0;
   left:0;
   z-index:4
 }
-
-
-
-
 
 i {
   display:inline-block;
@@ -673,10 +686,6 @@ i {
   height: auto;
 
 }
-
-
-
-
 
 #map {
   width:100%;

@@ -1,6 +1,9 @@
 angular.module("myapp")
 .controller("ContactController", ["$scope", "$http", function( $scope, $http ){
 document.getElementById('contact').focus();
+$(document).ready(function(){
+    $(this).scrollTop(0);
+});
   $scope.submit = function( user ){
    console.log("prije requesta");
     $http({
@@ -11,6 +14,8 @@ document.getElementById('contact').focus();
     }).then(function(res){
       console.log("uspjelo");
       //console.log(res);
+      $('#contact-form').css("display", "none");
+      $('#feedback-form').css("display", "block");
     }).catch( function( err ){
       console.log( err );
     });

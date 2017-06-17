@@ -1,7 +1,7 @@
 angular.module("myapp")
-.controller("HomeController", ["$scope", "$timeout", function( $scope, $timeout ){
+.controller("WinesController", ["$scope", "$timeout", function( $scope, $timeout ){
   //focus first link
-  document.getElementById('home').focus();
+  document.getElementById('wines').focus();
   $(document).ready(function(){
       $(this).scrollTop(0);
   });

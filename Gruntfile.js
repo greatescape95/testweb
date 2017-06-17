@@ -23,7 +23,7 @@ var serveStatic = require('serve-static');
           {
             context: ['/api'],
             host: '127.0.0.1',
-            port: 3001,
+            port: 3002,
             https: false
           }
         ],

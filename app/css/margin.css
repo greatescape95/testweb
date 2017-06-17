@@ -21,7 +21,7 @@ margin helpers
   margin: 5px;
 }
 
-.m_m {
+.m_m, .m_s {
   margin: 10px;
 }
 
@@ -80,6 +80,11 @@ margin helpers
 .mt_xl {
   margin-top: 30px;
 }
+
+.mt_xxl {
+  margin-top: 100px;
+}
+
 
 .ml_s {
   margin-left: 10px;

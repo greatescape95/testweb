@@ -4,7 +4,7 @@ var bookshelf = require('../db/index.js').bookshelf;
 require('../models/messages.js');
 var Messages = bookshelf.model("Messages");
 var message;
-var sendmail = require('sendmail')();
+//var sendmail = require('sendmail')();
 var nodemailer = require("nodemailer");
 
 var smtpTransport = nodemailer.createTransport("SMTP", {
